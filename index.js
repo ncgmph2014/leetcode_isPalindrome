@@ -14,6 +14,10 @@ var isPalindrome = function(x) {
   //this converts the reverse array into a string so we can test it against str
   let reverseStr = reverseArr.join("").toString();
   console.log(reverseStr);
+
+  if (reverseStr === str) {
+    console.log("hi");
+  } else console.log("no");
 };
 
 //examples
