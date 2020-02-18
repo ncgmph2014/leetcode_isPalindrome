@@ -15,12 +15,10 @@ var isPalindrome = function(x) {
   let reverseStr = reverseArr.join("").toString();
   console.log(reverseStr);
 
-  if (reverseStr === str) {
-    console.log("hi");
-  } else console.log("no");
+  return reverseStr === str ? true : false;
 };
 
 //examples
-isPalindrome(10);
-isPalindrome(121);
-isPalindrome(-121);
+console.log(isPalindrome(10) + " should return false");
+console.log(isPalindrome(121) + " should return true");
+console.log(isPalindrome(-121) + " should return false");
